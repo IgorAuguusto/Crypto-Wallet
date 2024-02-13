@@ -1,4 +1,4 @@
-<%= form_with(model: coin) do |form| %>
+<%= form_with(model: coin, local: true) do |form| %>
   <% if coin.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(coin.errors.count, "error") %> prohibited this coin from being saved:</h2>
@@ -24,6 +24,14 @@
   <div>
     <%= form.label :url_image, style: "display: block" %>
     <%= form.text_field :url_image %>
+    <% if coin.url_image %>
+      <%= image_tag coin.url_image, size: "25x25" %>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :mining_type_id, style: "display: block" %>
+    <%= form.select("mining_type_id", @mining_type_options) %>
   </div>
 
   <div>
