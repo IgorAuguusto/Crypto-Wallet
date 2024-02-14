@@ -1,9 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Moedas</h1>
-<h2><%= cookies[:curso] %></h2>
-<h2><%= session[:user_name]%><h2>
-<table>
+<h1><%= Coin.model_name.human(count: @coins.count) %></h1>
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= @coins.human_attribute_name(:description) %></th>
@@ -23,7 +21,7 @@
         <td><%= link_to t("links.edit"), edit_coin_path(coin) %></td>
         <td><%= link_to t("links.delete"), coin, method: :delete, data: { 
             turbo_method: :delete,    
-            turbo_confirm: 'Confirmar exclusão?' } %></td>
+            turbo_confirm: t("messages.confirm") } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +29,4 @@
 
 <br>
 
-<%= link_to t('Nova Moeda'), new_coin_path, class:"btn btn-primary" %>
+<%= link_to t('new.coin'), new_coin_path, class:"btn btn-primary" %>

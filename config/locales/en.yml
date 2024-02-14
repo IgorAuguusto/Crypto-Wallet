@@ -1,36 +1,21 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
   actual_locale: "English (International)"
-  hello: "Hello world"
+  welcome: "Welcome!"
+  messages:
+    welcome: "This is the Crypto Wallet, an app that you can register and keep up with your cryptocoins"
+    menu: "To start, choose an option below:"
+    confirm: "Are you sure?"
   links:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
+    back: "Back"
+  new:
+    coin: "New Coin"
+    mining_type: "New Mining Type"
+  editing:
+    coin: "Editing Coin"
+    mining_type: "Editing Mining Type"
+  showing:
+    coin: "Showing Coin"
+    mining_type: "Showing Mining Type"
