@@ -13,9 +13,16 @@ en:
   new:
     coin: "New Coin"
     mining_type: "New Mining Type"
+    mining_types: "Select Mining Type"
+  edit:
+    coin: "Edit This Coin"
+    mining_type: "Edit This Mining Type"
   editing:
     coin: "Editing Coin"
     mining_type: "Editing Mining Type"
   showing:
     coin: "Showing Coin"
     mining_type: "Showing Mining Type"
+  delete:
+    coin: "Delete This Coin"
+    mining_type: "Delete This Mining Type"

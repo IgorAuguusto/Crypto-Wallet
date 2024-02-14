@@ -13,9 +13,16 @@ pt-BR:
   new:
     coin: "Nova Moeda"
     mining_type: "Novo Tipo de Mineração"
+    mining_types: "Selecione o Tipo de mineração"
+  edit:
+    coin: "Editar Moeda"
+    mining_type: "Editar Tipo de Mineração"
   editing:
     coin: "Editando Moeda"
     mining_type: "Editando Tipo de Mineração"
   showing:
     coin: "Mostrando Moeda"
     mining_type: "Mostrando Tipo de Mineração"
+  delete:
+    coin: "Excluir Moeda"
+    mining_type: "Excluir Tipo de Mineração"

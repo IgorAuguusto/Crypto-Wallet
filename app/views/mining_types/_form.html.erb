@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+  <div class="mb-3">
+    <%= form.label :description%>
+    <%= form.text_field :description, class:"form-control",  placeholder:"Proof of Work" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :acronym %>
+    <%= form.text_field :acronym, class:"form-control",  placeholder:"PoW" %>
   </div>
 
   <div>
-    <%= form.label :acronym, style: "display: block" %>
-    <%= form.text_field :acronym %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit nil, class:"btn btn-primary" %>
   </div>
 <% end %>

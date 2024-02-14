@@ -3,8 +3,9 @@
 <%= render @coin %>
 
 <div>
-  <%= link_to "Edit this coin", edit_coin_path(@coin) %> |
-  <%= link_to "Back to coins", coins_path %>
-
-  <%= button_to "Destroy this coin", @coin, method: :delete %>
+  <%= link_to t("edit.coin"), edit_coin_path(@coin), class:"btn btn-primary" %> |
+  <%= link_to t("links.back"), coins_path, class:"btn btn-primary" %>
+  <br><br>
+  <%= button_to t("delete.coin"), @coin, method: :delete, class:"btn btn-primary" %>
 </div>
+

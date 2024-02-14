@@ -1,17 +1,22 @@
 <div id="<%= dom_id coin %>">
-  <p>
-    <strong>Description:</strong>
-    <%= coin.description %>
-  </p>
+  <div>
+    <%= label_tag nil, @coin.class.human_attribute_name(:description) %>
+    <%= text_field_tag nil, coin.description, class:"form-control", disabled: true %>
+  </div>
 
-  <p>
-    <strong>Acronym:</strong>
-    <%= coin.acronym %>
-  </p>
+  <div>
+    <%= label_tag nil, @coin.class.human_attribute_name(:acronym) %>
+    <%= text_field_tag nil, coin.acronym, class:"form-control", disabled: true %>
+  </div>
 
-  <p>
-    <strong>Url image:</strong>
-    <%= image_tag coin.url_image, size: "25x25" %>
-  </p>
+  <div>
+    <%= label_tag nil, @coin.class.human_attribute_name(:url_image) %>
+    <%= text_field_tag nil, coin.url_image, class:"form-control", disabled: true %>
+  </div>
 
+  <div>
+    <%= label_tag nil, @coin.class.human_attribute_name(:mining_type) %>
+    <%= text_field_tag nil, @coin.mining_type.description, class:"form-control", disabled: true %>
+  </div>
 </div>
+<br>
